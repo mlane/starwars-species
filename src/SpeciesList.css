@@ -1,0 +1,18 @@
+/* style ui and li using flex column with a gap of 2rems */
+/* ui className is species-list */
+/* li should have a middot vertically aligned to the content */
+.species-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.species-list li {
+  display: flex;
+  align-items: center;
+}
+
+.species-list li::before {
+  content: '·';
+  margin-right: 1rem;
+}
